@@ -1,0 +1,32 @@
+header{
+    background-color: aquamarine;
+    height: 50px;
+}
+h1{
+    font-family: roboto;
+    color: rgb(2, 1, 2);
+    text-align: center;
+}
+
+
+main{
+    background-image: url(https://lh3.googleusercontent.com/gg-dl/AOI_d__2YViUVtUW_f7uXalnFKGoFMCG2MLpvsbPI667m-D3vhpakI_KCrHc3W2wlWCzgpZT2x3d6kZaCjylnlNmwvVNkxI96aaCEv0CtEZ2EeJAQe_6CBznIxAJLOL-ECq2kJ9WaUh84ijf033HsPrXsOPFvRHPXHKJX7it0JjU8st_OhAY=s1024-rj);
+    height: 50%;
+    font-family: roboto;
+    color: rgb(2, 1, 2);
+}
+
+
+
+
+
+
+
+
+footer{ 
+    background-color: gray;
+}
+#fin{
+    font-family: roboto;
+    font-weight: 500px;
+}
