@@ -1,0 +1,152 @@
+/* Reseteo básico para que todos los navegadores se vean igual */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; 
+}
+
+/* ================== NAVEGACIÓN (FLEXBOX) ================== */
+.barra_nav {
+    background-color: #212529;
+    padding: 20px;
+}
+
+.lista_nav {
+    display: flex;
+    justify-content: flex-end; /* Alinea los links a la derecha */
+    gap: 30px;
+    list-style: none;
+}
+
+.link_nav {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link_nav:hover {
+    color: #0dcaf0;
+}
+
+/* ================== ENCABEZADO (FLEXBOX) ================== */
+.encabezado_web {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo_web {
+    color: #0dcaf0;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.texto_web {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* ================== GRILLA PRINCIPAL (CSS GRID) ================== */
+.seccion_principal {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido en la pantalla */
+}
+
+.grilla_paises {
+    display: grid;
+    /* Esto hace la magia responsiva: 1 columna en celular, 3 en PC automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; 
+}
+
+/* ================== CAJAS DE PAÍSES (FLEXBOX) ================== */
+.caja_pais {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    min-height: 380px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Empuja la info hacia abajo */
+}
+
+.caja_pais:hover {
+    transform: translateY(-8px);
+}
+
+.info_pais {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+}
+
+.titulo_pais {
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    margin-bottom: 10px;
+}
+
+.texto_pais {
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+.boton_pais {
+    display: inline-block;
+    background-color: #0dcaf0;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* ================== PIE DE PÁGINA ================== */
+.pie_pagina {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.titulo_pie { margin-bottom: 15px; }
+.texto_pie { color: #aaaaaa; max-width: 600px; margin: 0 auto 20px auto; }
+.contacto_pie { margin-bottom: 10px; }
+
+
+/* ================== FONDOS DE IMAGEN ================== */
+#argentina { background-image: url('https://images.unsplash.com/photo-1612294037562-f1f3a970e599?q=80&w=800&auto=format&fit=crop'); }
+#australia { background-image: url('https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=80&w=800&auto=format&fit=crop'); }
+#alemania  { background-image: url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=800&auto=format&fit=crop'); }
+#brasil    { background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=800&auto=format&fit=crop'); }
+#egipto    { background-image: url('https://images.unsplash.com/photo-1539768942893-daf53e448371?q=80&w=800&auto=format&fit=crop'); }
+#espana    { background-image: url('https://images.unsplash.com/photo-1539037116277-4db20b8c66e4?q=80&w=800&auto=format&fit=crop'); }
+#usa       { background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=800&auto=format&fit=crop'); }
+#francia   { background-image: url('https://images.unsplash.com/photo-1502602898657-3e9076112260?q=80&w=800&auto=format&fit=crop'); }
+#italia    { background-image: url('https://images.unsplash.com/photo-1515542622106-78b28af8715b?q=80&w=800&auto=format&fit=crop'); }
+#japon     { background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=800&auto=format&fit=crop'); }
+#marruecos { background-image: url('https://images.unsplash.com/photo-1539020140153-e479b8c22e70?q=80&w=800&auto=format&fit=crop'); }
+#peru      { background-image: url('https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=800&auto=format&fit=crop'); }
+#mexico    { background-image: url('https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?q=80&w=800&auto=format&fit=crop'); }
+#grecia    { background-image: url('https://images.unsplash.com/photo-1533105079780-92b
